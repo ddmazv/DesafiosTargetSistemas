@@ -1,8 +1,7 @@
 package desafios;
 
 import java.util.Scanner;
-
-import desafios.fibonacci.Fibonacci;
+import desafios.fiboncci.Fibonacci;
 import desafios.stringverify.StringVerify;
 import desafios.valorsoma.SomaValue;
 

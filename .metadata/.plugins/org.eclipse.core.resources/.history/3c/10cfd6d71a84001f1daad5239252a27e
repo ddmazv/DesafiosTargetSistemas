@@ -24,6 +24,7 @@ public class StringVerify {
 		return charactersmach.toString();
 	}
 
+	
 	public char upChar(String verify) {
 		char cutupper = verify.toUpperCase().charAt(0);
 		return cutupper;

@@ -13,7 +13,6 @@ public SomaValue(int indice, int soma, int k) {
 
 	public int calc() {
 		while(k<indice) {
-			System.out.println(k);
 			this.k = k + 1;
 			this.soma = soma + k;
 		}
