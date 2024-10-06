@@ -45,7 +45,10 @@ Você está em uma sala com três interruptores, cada um conectado a uma lâmpad
 ### Resolução
 entendendo que eu só tenho duas idas a uma das salas das lâmpadas e quero saber qual interruptor a liga:
 ```
-eu aciono dois interruptores de uma vez, e vou verificar se a lâmpada está acesa, caso nenhum do que acionei ligue a lâmpada seria o único interruptor que eu não havia ativado, caso um deles ligue a lâmpada, eu voltaria, desativava um dos dois, e voltava para verificar, caso a lâmpada estivesse ligada seria o que deixei ativado, caso não seria o que desativei.
+eu aciono dois interruptores de uma vez, e vou verificar se a lâmpada está acesa, 
+se nenhum dos que acionei ligou a lâmpada seria o único interruptor que eu não havia
+ativado, caso um deles ligue a lâmpada, eu voltaria, desativava um dos dois, e voltava para
+verificar, caso a lâmpada estivesse ligada seria o que deixei ativado, caso não seria o que desativei.
 ```
 Entendendo que há 3 salas cada um com uma lâmpada e eu tenho 2 idas: 
 
