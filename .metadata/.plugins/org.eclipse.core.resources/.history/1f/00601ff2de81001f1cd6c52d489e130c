@@ -1,0 +1,66 @@
+package desafios.fiboncci;
+
+import java.util.ArrayList;
+
+public class Fibonacci {
+	int befFibo;
+
+
+	
+	/* metodo para realizar o calculo e exibir a ordem fibonacci
+	 * a partir de um numero digitado pelo usuario. 
+	 */
+	
+	public int calcFibo(int number, int qtd) {
+		int nextFibo = 0;
+
+		for (int cont = 0; cont < qtd; cont++) {
+			findBefFibo(number);
+			nextFibo = number + this.befFibo;
+			number = nextFibo;
+			System.out.println(nextFibo);
+		}
+		return nextFibo;
+
+	}
+
+	public boolean verifyFibo(int number) {
+		boolean verifyedNumber;
+
+		if (verifyPerfectRoot(5 * number * number + 4) || verifyPerfectRoot(5 * number * number - 4)) {
+			verifyedNumber = true;
+			this.number = number;
+		} else {
+			verifyedNumber = false;
+		}
+
+		return verifyedNumber;
+	}
+
+	public boolean verifyPerfectRoot(int number) {
+		int sqroot = (int) Math.sqrt(number);
+		int perfectroot = sqroot * sqroot;
+
+		return perfectroot == number;
+	}
+
+	public void findBefFibo(int number) {
+		if (number != 1) {
+			if (verifyFibo(number)) {
+				this.befFibo = --number;
+				while (!verifyFibo(this.befFibo)) {
+					befFibo = --number;
+					if (verifyFibo(this.befFibo)) {
+
+					}
+
+				}
+			}
+
+		} else {
+			befFibo = 1;
+		}
+
+	}
+
+}

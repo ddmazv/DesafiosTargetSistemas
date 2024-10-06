@@ -1,0 +1,34 @@
+package desafios.stringverify;
+
+import java.util.ArrayList;
+
+public class StringVerify {
+
+	public String containAChar(String text, char verifychar) {
+		char[] charactersArray = new char[text.length()]; 
+		ArrayList<Character> charactersmach = new ArrayList<Character>();  
+		
+		text.getChars(0, text.length(), charactersArray, 0);
+		for(char character : charactersArray) {
+			if(character == verifychar) {
+				charactersmach.add(character);
+			}
+			
+			
+		}
+		return charactersmach.toString();
+	}
+	
+	
+	public String containACharJavaM(String text, String verify) {
+		for(int index=0; index<text.length(); index++) {
+			if(text.charAt(index) == verify.charAt(0)) {
+				
+			}
+		}
+		
+		return "a";
+	}
+	
+	
+}

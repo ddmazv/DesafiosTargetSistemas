@@ -1,0 +1,15 @@
+package desafios.stringverify;
+
+public class StringVerify {
+
+	public void containA(String text) {
+		char[] characters = new char[text.length()]; 
+		text.getChars(0, text.length(), characters, 0);
+		for(char letras : characters) {
+			System.out.println(letras);
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,58 @@
+package desafios.fiboncci;
+
+import java.util.ArrayList;
+
+public class Fibonacci {
+
+	int number;
+
+public Fibonacci() {
+	
+}
+	
+public int calcFibo(int number){
+	
+	if(verifyFibo(number)) {
+		System.out.println("esse numero pertemce a ordem fibonacci");
+		this.number = number;
+	}else {
+		System.out.println("esse numero não pertemce a ordem fibonacci");
+	}
+	
+	
+	
+	return number;
+}
+
+public boolean verifyFibo(int number){
+	return verifyNumber(5*number*number + 4) || verifyNumber(5*number*number - 4);
+}
+
+
+public boolean verifyNumber(int number) {
+	int sqroot = (int) Math.sqrt(number);
+	int perfectroot = sqroot * sqroot;
+	
+	return perfectroot == number ;
+}
+
+public int showFibo(int number, int qtd){
+	if(verifyFibo(number)) {
+	for(int index=0; index<qtd; index++) {
+		int befFibo = --number;
+		while(!verifyFibo(befFibo)) {
+			
+			befFibo = --number;
+			if(verifyFibo(befFibo)) {
+			System.out.println(number);
+			System.out.println("numero fibonacci anterior" + befFibo);
+			}
+			
+		}
+	}
+	}
+	
+	return number;
+}
+
+}

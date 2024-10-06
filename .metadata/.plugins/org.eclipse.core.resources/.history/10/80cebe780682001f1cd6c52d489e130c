@@ -1,0 +1,17 @@
+package desafios;
+
+import java.util.Scanner;
+
+import desafios.stringverify.StringVerify;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringVerify str = new StringVerify();
+		Scanner scan = new Scanner(System.in);
+		str.containA(scan.nextLine());
+		
+	}
+
+}

@@ -1,0 +1,85 @@
+package desafios.fiboncci;
+
+import java.util.ArrayList;
+
+public class Fibonacci {
+	int befFibo;
+	int number;
+
+	
+	/* metodo para realizar o calculo e exibir a ordem fibonacci
+	 * a partir de um numero digitado pelo usuario. 
+	 */
+	
+	public int calcFibo(int number, int qtd) {
+		int nextFibo = 0;
+		boolean flag = true;
+		for (int cont = 0; cont < qtd; cont++) { 
+			if(cont>1) {
+				flag=false;
+			}
+			findBefFibo(number, flag);
+			nextFibo = number + this.befFibo;
+			number = nextFibo;
+			System.out.println(nextFibo);
+		}
+		return nextFibo;
+
+	}
+
+	public void verifyFibo(int number) {
+		
+		if (verifyPerfectRoot(5 * number * number + 4) || verifyPerfectRoot(5 * number * number - 4)) {
+			System.out.println("O numero "+ number+ " é da ordem fibonacci");
+		} else {
+			System.out.println("O numero "+ number+ " não é da ordem fibonacci");
+		}
+
+	
+	}
+
+	public boolean verifyFibo(int number, boolean flag) {
+		boolean verifyedNumber;
+		
+		if (verifyPerfectRoot(5 * number * number + 4) || verifyPerfectRoot(5 * number * number - 4)) {
+			verifyedNumber = true;
+			if(flag) {
+				System.out.println("O numero "+ number+ " é da ordem fibonacci");
+			}
+		} else {
+			verifyedNumber = false;
+			if(flag) {
+				System.out.println("O numero "+ number+ " não é da ordem fibonacci");
+			}
+		}
+	
+		
+		return verifyedNumber;
+	}
+	public boolean verifyPerfectRoot(int number) {
+		int sqroot = (int) Math.sqrt(number);
+		int perfectroot = sqroot * sqroot;
+
+		return perfectroot == number;
+	}
+
+	public void findBefFibo(int number, boolean flag) {
+		if (number != 1) {
+			if (verifyFibo(number, flag)) {
+				this.befFibo = --number;
+				while (!verifyFibo(this.befFibo, flag)) {
+					befFibo = --number;
+					if (verifyFibo(this.befFibo, flag)) {
+
+					}
+
+				}
+			}
+
+		} else {
+			befFibo = 1;
+		}
+
+	}
+
+}

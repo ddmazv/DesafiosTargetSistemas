@@ -1,0 +1,66 @@
+package desafios.fiboncci;
+
+import java.util.ArrayList;
+
+public class Fibonacci {
+	int befFibo;
+	int number;
+
+public Fibonacci() {
+	
+}
+	
+public int calcFibo(int number, int qtd){
+	int nextFibo=0;
+	
+	for(int cont=0;cont<qtd;cont++) {
+	this.number = number;
+	findBefFibo(number);
+	nextFibo = number + this.befFibo;
+	number = nextFibo;
+	System.out.println(nextFibo);
+	}
+	return nextFibo;
+	
+}
+
+public boolean verifyFibo(int number){
+	boolean verifyedNumber;
+	
+	if(verifyNumber(5*number*number + 4) || verifyNumber(5*number*number - 4)) {
+		verifyedNumber = true;
+		this.number = number;
+	}else {
+		verifyedNumber = false;
+	}
+	
+	return verifyedNumber;
+}
+
+
+public boolean verifyNumber(int number) {
+	int sqroot = (int) Math.sqrt(number);
+	int perfectroot = sqroot * sqroot;
+	
+	return perfectroot == number ;
+}
+
+public void findBefFibo(int number){
+	if(verifyFibo(number)) {
+		this.befFibo = --number;
+		while(!verifyFibo(this.befFibo)) {
+			
+			befFibo = --number;
+			if(verifyFibo(this.befFibo)) {
+			
+			}
+			
+		}
+	}
+		
+	
+	
+
+}
+
+}

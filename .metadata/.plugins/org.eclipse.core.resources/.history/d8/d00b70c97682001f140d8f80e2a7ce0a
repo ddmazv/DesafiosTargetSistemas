@@ -1,0 +1,20 @@
+package desafios;
+
+import java.util.Scanner;
+
+import desafios.stringverify.StringVerify;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringVerify str = new StringVerify();
+		Scanner scan = new Scanner(System.in);
+		System.out.print("digite a palavra para verificar: ");
+		String text = scan.next();
+		String character = scan.next();
+		str.containAChar(text, character.charAt(0));
+		
+	}
+
+}

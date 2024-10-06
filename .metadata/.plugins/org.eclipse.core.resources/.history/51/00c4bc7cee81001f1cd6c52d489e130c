@@ -1,0 +1,59 @@
+package desafios;
+
+import java.util.Scanner;
+import desafios.fiboncci.Fibonacci;
+
+public class Desafios {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		boolean exit = false;
+		while (!exit) {
+		System.out.println("olá, seja bem-vindo a resolução dos desafios para a TargetSistemas");
+		System.out.println("1: Ordem fibonacci");
+		System.out.print("Digite o numero da opção desejada: ");
+		int options = scan.nextInt();
+		System.out.println();
+		
+		switch (options) {
+		case 1:
+			int num;
+			Fibonacci fibo = new Fibonacci();
+			System.out.println("Esse desafio tem como objetivo exibir se um numero digtado pertence a ordem fibonacci.");
+			
+				System.out.println("Opções:");
+				System.out.println("1: Verificar se um numero pertemce a ordem Fibonacci.");
+				System.out.println("2: Verificar os proximos numeros da ordem a partir de um escolhido.");
+				System.out.println("3: Sair.");
+				options = scan.nextInt();
+				switch(options) {
+				
+				case 1:
+					System.out.print("Digite um numero: ");
+					num = scan.nextInt();
+					fibo.verifyFibo(num, true);
+					System.out.print("deseja verificar os porximos da ordem a partir desse? [s/n] : ");
+					String option=scan.next();
+					if(option.equalsIgnoreCase("s")) {
+						System.out.print("Digite quantos numeros quer ver? ");
+						fibo.calcFibo(num, scan.nextInt());
+					}
+					continue;
+				case 2:
+						System.out.print("digite um numero para ver apartir dele: ");
+						num = scan.nextInt();
+						System.out.print("Digite quantos numeros quer ver: ");
+						fibo.calcFibo(num, scan.nextInt());
+					continue;
+				default: exit=true;
+				}
+			
+			break;
+		case 2:
+		default: continue;
+		}
+	}
+	}
+
+}

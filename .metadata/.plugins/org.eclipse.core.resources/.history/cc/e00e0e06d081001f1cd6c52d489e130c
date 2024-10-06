@@ -1,0 +1,25 @@
+package desafios.fiboncci;
+
+public class Fibonacci {
+
+
+public Fibonacci() {
+	
+}
+	
+public int calcFibo(int number){
+	
+	
+	
+	
+	return number;
+}
+
+public boolean verifyNumber(int number) {
+	int sqroot = (int) Math.sqrt(number);
+	int perfectroot = sqroot * sqroot;
+	
+	return perfectroot == number ;
+}
+
+}
