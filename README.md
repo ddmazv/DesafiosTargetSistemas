@@ -53,12 +53,16 @@ verificar, caso a lâmpada estivesse ligada seria o que deixei ativado, caso nã
 Entendendo que há 3 salas cada um com uma lâmpada e eu tenho 2 idas: 
 
 ```
-na primeira ida eu aciono o interruptor 1 deixo uns 15 minutos ligados, desligo o 1, ligo o interruptor 2 e 3 e desligo o 2 rapidamente, vou até a primeira sala e verifico
+na primeira ida eu aciono o interruptor 1 deixo uns 15 minutos ligados, desligo o 1, ligo
+o interruptor 2 e 3 e desligo o 2 rapidamente, vou até a primeira sala e verifico
 
 caso a lâmpada esteja ligada:
 sei que é o interruptor 3, o único que deixei ligado.
 caso a lâmpada esteja desligada:
-verifico sua temperatura, se estiver quente é o interruptor 1 pois ficou mais tempo acionado, se estiver fria é o 2 curto tempo.
+verifico sua temperatura, se estiver quente é o interruptor 1 pois ficou mais
+tempo acionado, se estiver fria é o 2 curto tempo.
 
-volto e com o resultado espero todas as lampas esfriarem, sabendo qual interruptor liga a primeira sala, aplico esse método para a segunda com os dois interruptores restantes, e concluindo o resultado da primeira e da segunda, por eliminação chegamos a terceira.
+volto e com o resultado espero todas as lampas esfriarem, sabendo qual interruptor liga a
+primeira sala, aplico esse método para a segunda com os dois interruptores restantes, e
+concluindo o resultado da primeira e da segunda, por eliminação chegamos a terceira.
 ```
