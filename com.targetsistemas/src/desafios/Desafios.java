@@ -52,7 +52,7 @@ public class Desafios {
 					System.out.print("Digite o caractere que quer verificar: ");
 					String character = scan.next();
 					System.out.println(sv.containAChar(text, character));
-					System.out.println("Existem " + sv.getQtdChars()+" letras "+sv.lowChar(character)+ " em seu texto");
+					System.out.println("Existem " + sv.getQtdChars()+" letras "+character.charAt(0)+ " em seu texto");
 					System.out.println();
 					continue;
 				case 3:
