@@ -9,7 +9,8 @@ Para verificar se um numero pertence a sequência de Fibonacci, deve ser aplicad
 ## Desafio 2
 Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
 #### [Resolução:](https://github.com/ddmazv/DesafiosTargetSistemas/blob/main/com.targetsistemas/src/desafios/stringverify/StringVerify.java)
-Achar caracteres em um texto não é difícil, o Java possuí métodos da classe String que auxiliam a criação, modificação e verificação de variáveis de texto, com isso em mente utilizei os métodos ` .toUpperCase(), .toLowerCase()  e .charAt() ` para tratar a String digitada pelo usuário e transforma-la em um char para realizar a comparação corretamente, caso a comparação retorne true, ele adiciona o caractere em um ArrayList e mostra quantas vezes o caractere repetiu.
+Achar caracteres em um texto não é difícil, o Java possuí métodos da classe string que auxiliam a criação, modificação e verificação de variáveis de texto, com isso em mente utilizei os métodos ` .indexOf(), .toLowerCase()` para tratar a string digitada pelo usuário e transforma-la em um caractere único podendo realizar a comparação corretamente, essa string é passada para o método `indexOf` que busca no texto de input os elementos e passa sua posição para a variável `i`, em cada passada pelo loop for o código adiciona o caractere encontrado através de respectivo índice encontrado pelo método, ao fim é retornado o array com os caracteres encontrados.
+
 ## Desafio 3
 Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);
 ####  [Resolução:](https://github.com/ddmazv/DesafiosTargetSistemas/blob/main/com.targetsistemas/src/desafios/valorsoma/SomaValue.java)
