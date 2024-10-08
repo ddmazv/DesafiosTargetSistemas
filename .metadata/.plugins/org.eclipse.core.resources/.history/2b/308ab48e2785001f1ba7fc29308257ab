@@ -16,6 +16,7 @@ public class StringVerify {
 			charactersmach.add(charactersArray[i]);
 		}
 
+		//qtdchars = charactersmach.size();
 		if (qtdchars < 1) {
 			System.out.println("caractere não encontrado");
 		}
